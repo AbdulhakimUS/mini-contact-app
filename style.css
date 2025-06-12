@@ -88,7 +88,8 @@ body {
 
 .input-group input {
     border: none;
-    outline: none;
+    outline: none !important;
+    box-shadow: none !important;
     background-color: transparent;
     color: #394867;
     border-radius: 5px;
@@ -104,16 +105,16 @@ body {
 .btn-submit {
     background-color: #394867;
     color: #fff;
-    padding: 9px 20px;  
+    padding: 9px 20px;
 }
 
 
-.btn:active {
+.btn-submit:active {
     background-color: #253659 !important;
     color: #fff !important;
 }
 
-.btn:hover {
+.btn-submit:hover {
     background-color: #253659 !important;
     color: #fff !important;
 }
@@ -124,10 +125,14 @@ body {
     color: #253659;
 }
 
+
+
+
+
 /* Responsive */
 
 @media (max-width: 1201px) {
-    .login-img{
+    .login-img {
         width: 400px;
         height: 400px;
         position: absolute;
@@ -135,13 +140,14 @@ body {
         right: 0;
     }
 
-    .user-img{
+    .user-img {
         width: 90px;
         height: 100px;
         left: 130px;
         top: 240px;
     }
-    .user-img-2{
+
+    .user-img-2 {
         width: 90px;
         height: 100px;
         left: 320px;
@@ -152,11 +158,11 @@ body {
 
 @media (max-width: 991px) {
 
-    .card{
+    .card {
         margin-top: 80px;
     }
 
-    .login-img{
+    .login-img {
         width: 300px;
         height: 300px;
         position: absolute;
@@ -164,13 +170,14 @@ body {
         right: 0;
     }
 
-    .user-img{
+    .user-img {
         width: 90px;
         height: 100px;
         left: 130px;
         top: 240px;
     }
-    .user-img-2{
+
+    .user-img-2 {
         width: 90px;
         height: 100px;
         left: 320px;
@@ -181,11 +188,11 @@ body {
 
 @media (max-width: 768px) {
 
-    .card{
+    .card {
         margin-top: 70px;
     }
 
-    .login-img{
+    .login-img {
         width: 220px;
         height: 220px;
         position: absolute;
@@ -193,13 +200,14 @@ body {
         right: 0;
     }
 
-    .user-img{
+    .user-img {
         width: 70px;
         height: 80px;
         left: 100px;
         top: 240px;
     }
-    .user-img-2{
+
+    .user-img-2 {
         width: 70px;
         height: 80px;
         left: 280px;
@@ -210,36 +218,38 @@ body {
 
 @media (max-width: 576px) {
 
-    .card{
+    .card {
         margin-top: 70px;
     }
 
-    .login-img{
+    .login-img {
         display: none;
     }
 
-    .user-img{
+    .user-img {
         display: none;
     }
-    .user-img-2{
+
+    .user-img-2 {
         display: none;
     }
 }
 
 @media (max-width: 480px) {
 
-    .card{
+    .card {
         margin-top: 70px;
     }
 
-    .login-img{
+    .login-img {
         display: none;
     }
 
-    .user-img{
+    .user-img {
         display: none;
     }
-    .user-img-2{
+
+    .user-img-2 {
         display: none;
     }
 }
@@ -247,57 +257,60 @@ body {
 
 @media (max-width: 420px) {
 
-    .card{
+    .card {
         margin-top: 70px;
         width: 350px;
     }
 
-    .login-img{
+    .login-img {
         display: none;
     }
 
-    .user-img{
+    .user-img {
         display: none;
     }
-    .user-img-2{
+
+    .user-img-2 {
         display: none;
     }
 }
 
 @media (max-width: 390px) {
 
-    .card{
+    .card {
         margin-top: 70px;
         width: 350px;
     }
 
-    .login-img{
+    .login-img {
         display: none;
     }
 
-    .user-img{
+    .user-img {
         display: none;
     }
-    .user-img-2{
+
+    .user-img-2 {
         display: none;
     }
 }
 
 @media (max-width: 360px) {
 
-    .card{
+    .card {
         margin-top: 70px;
         width: 300px;
     }
 
-    .login-img{
+    .login-img {
         display: none;
     }
 
-    .user-img{
+    .user-img {
         display: none;
     }
-    .user-img-2{
+
+    .user-img-2 {
         display: none;
     }
 }

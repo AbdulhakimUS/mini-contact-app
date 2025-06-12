@@ -25,23 +25,31 @@
         <img src="./img/contact 1.svg" alt="" class="login-img">
         <div class="card">
             <div class="position-relative mx-auto user-icon" style="width: 144px; height: 144px;">
-                <img src="./img/man-face-emotive-icon-smiling-male-character-in-blue-shirt-flat-illustration-isolated-on-white-happy-human-psychological-portrait-positive-emotions-user-avatar-for-app-web-design-vector 1.svg" class="rounded-circle border border-2"
-                    style="width: 144px; height: 144px; object-fit: cover;" alt="avatar">
-                <!-- Иконка загрузки -->
-                <button class="btn btn-light btn-sm rounded-circle position-absolute" style="bottom: 0; right: 0;">
-                    <i class="bi bi-image"></i> <!-- Bootstrap Icons -->
-                </button>
+                <img id="avatarPreview"
+                    src="./img/man-face-emotive-icon-smiling-male-character-in-blue-shirt-flat-illustration-isolated-on-white-happy-human-psychological-portrait-positive-emotions-user-avatar-for-app-web-design-vector 1.svg"
+                    class="rounded-circle border border-2" style="width: 144px; height: 144px; object-fit: cover;"
+                    alt="avatar">
+                <label for="avatarUpload" class="btn btn-light btn-sm rounded-circle position-absolute"
+                    style="bottom: 0; right: 0; cursor: pointer;">
+                    <i class="bi bi-image"></i>
+                </label>
+                <input type="file" id="avatarUpload" accept="image/*" style="display: none;">
             </div>
+
             <div class="login-place">
                 <h2 class="login-h2">Iltimos ismingizni kiriting</h2>
                 <form id="login-form" class="login-form">
                     <div class="input-group mb-2">
-                        <span class="input-group-text" style="border: none; border-right: 2px solid #394867; margin: 5px;"><i class="bi bi-person"></i></span>
-                        <input type="text" class="form-control" placeholder="Ism">
+                        <span class="input-group-text"
+                            style="border: none; border-right: 2px solid #394867; margin: 5px;"><i
+                                class="bi bi-person"></i></span>
+                        <input type="text" class="form-control" placeholder="Login">
                     </div>
                     <div class="input-group mb-3">
-                        <span class="input-group-text" style="border: none; border-right: 2px solid #394867; margin: 5px;"><i class="bi bi-people"></i></span>
-                        <input type="text" class="form-control" placeholder="Familiya (Ixtiyoriy)">
+                        <span class="input-group-text"
+                            style="border: none; border-right: 2px solid #394867; margin: 5px;"><i
+                                class="bi bi-key"></i></span>
+                        <input type="password" class="form-control" placeholder="Parol">
                     </div>
                     <button type="submit" class="btn btn-submit w-100">Kirish</button>
             </div>
