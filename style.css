@@ -113,6 +113,11 @@ body {
     color: #fff !important;
 }
 
+.btn:hover {
+    background-color: #253659 !important;
+    color: #fff !important;
+}
+
 .bi-image {
     font-weight: bold;
     cursor: pointer;
