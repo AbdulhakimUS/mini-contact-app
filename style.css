@@ -239,3 +239,22 @@ body {
     }
 }
 
+@media (max-width: 390px) {
+
+    .card{
+        margin-top: 70px;
+        width: 350px;
+    }
+
+    .login-img{
+        display: none;
+    }
+
+    .user-img{
+        display: none;
+    }
+    .user-img-2{
+        display: none;
+    }
+}
+
