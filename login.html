@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini Contact App</title>
+    <title>Login Page</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
@@ -15,11 +15,11 @@
         href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tagesschrift&display=swap"
         rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-login">
         <img src="./img/Group.svg" alt="" class="user-img">
         <img src="./img/Group.svg" alt="" class="user-img-2">
         <img src="./img/contact 1.svg" alt="" class="login-img">
@@ -51,7 +51,7 @@
                                 class="bi bi-key"></i></span>
                         <input type="password" class="form-control" placeholder="Parol">
                     </div>
-                    <button type="submit" class="btn btn-submit w-100">Kirish</button>
+                    <button type="submit" class="btn btn-submit w-100" onclick="submit()">Kirish</button>
             </div>
         </div>
     </div>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tagesschrift&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="home.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar d-flex justify-content-around align-items-center px-4">
+        <!-- Левая часть -->
+        <div class="left-nav">
+            <button class="logout-btn btn-nav">Log Out <i class="bi bi-box-arrow-left"></i></button>
+        </div>
+
+        <!-- Центр -->
+        <div class="center-nav">
+            <h1 class="contact-h1">Kontaktlar</h1>
+        </div>
+
+        <!-- Правая часть -->
+        <div class="right-nav">
+            <button class="darkmode-btn btn-nav"><i class="bi bi-moon-stars"></i> Tun Rejimi</button>
+        </div>
+    </nav>
+
+
+    <!-- Home -->
+    <div class="container-home">
+        <div class="left">
+            <h2 class="left-home-h1">Kontakt yaratish</h2>
+            <div class="card-home">
+                <div class="position-relative mx-auto user-icon-1" style="width: 144px; height: 144px;">
+                    <img id="avatarPreview"
+                        src="./img/man-face-emotive-icon-smiling-male-character-in-blue-shirt-flat-illustration-isolated-on-white-happy-human-psychological-portrait-positive-emotions-user-avatar-for-app-web-design-vector 1.svg"
+                        class="rounded-circle border border-2" style="width: 144px; height: 144px; object-fit: cover;"
+                        alt="avatar">
+                    <label for="avatarUpload" class="btn btn-light btn-sm rounded-circle position-absolute"
+                        style="bottom: 0; right: 0; cursor: pointer;">
+                        <i class="bi bi-image"></i>
+                    </label>
+                    <input type="file" id="avatarUpload" accept="image/*" style="display: none;">
+                </div>
+
+                <div class="login-place">
+                    <h2 class="login-h2">Iltimos ismingizni kiriting</h2>
+                    <form id="login-form" class="login-form">
+                        <div class="input-group mb-1">
+                            <span class="input-group-text"
+                                style="border: none; border-right: 2px solid #394867; margin: 5px;"><i
+                                    class="bi bi-person"></i></span>
+                            <input type="text" class="form-control" placeholder="Ism">
+                        </div>
+                        <div class="input-group mb-1">
+                            <span class="input-group-text"
+                                style="border: none; border-right: 2px solid #394867; margin: 5px;"><i
+                                    class="bi bi-people"></i></span>
+                            <input type="text" class="form-control" placeholder="Familiya">
+                        </div>
+                        <div class="input-group mb-1">
+                            <span class="input-group-text"
+                                style="border: none; border-right: 2px solid #394867; margin: 5px;"><i
+                                    class="bi bi-phone"></i></span>
+                            <input type="number" class="form-control" placeholder="Telefon raqam">
+                        </div>
+                        <div class="input-group mb-1">
+                            <span class="input-group-text"
+                                style="border: none; border-right: 2px solid #394867; margin: 5px;"><i
+                                    class="bi bi-calendar-date"></i></span>
+                            <input type="date" class="form-control" placeholder="Sana">
+                        </div>
+                        <div class="input-group mb-2">
+                            <span class="input-group-text"
+                                style="border: none; border-right: 2px solid #394867; margin: 5px;"><i
+                                    class="bi bi-pencil-square"></i></span>
+                            <input type="text" class="form-control" placeholder="Qo'shimcha ma'lumot">
+                        </div>
+                        <button type="submit" class="btn btn-submit w-100">Qo'shish</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <h1 class="right-home-h1">Kontaktlar</h1>
+            <div class="contact-list">
+                <div class="login-name-place">
+                    <h3 class="login-name-place-h3">Abdulhakim</h3>
+                    <div class="user-icon-2" style="width: 44px; height: 44px;">
+                        <img id="avatarPreview"
+                            src="./img/man-face-emotive-icon-smiling-male-character-in-blue-shirt-flat-illustration-isolated-on-white-happy-human-psychological-portrait-positive-emotions-user-avatar-for-app-web-design-vector 1.svg"
+                            class="rounded-circle "
+                            style="width: 44px; height: 44px; object-fit: cover;  border: 2px solid #394867;"
+                            alt="avatar">
+                    </div>
+                </div>
+                <div class="search-place">
+                    <div class="input-group input-search mb-3">
+                        <span class="input-group-text"
+                            style="border: none; border-right: 2px solid #394867; margin: 5px;"><i
+                                class="bi bi-search"></i></span>
+                        <input type="text" placeholder="Kontakt qidirish" style="margin-left: 10px;">
+                    </div>
+                    <button id="contact-search" class="contact-search">Barchasi</button>
+                </div>
+                <div class="save-contact-place">
+                    <div class="user-contact">
+                        <div class="user-icon-2" style="width: 65px; height: 65px;">
+                            <img id="avatarPreview"
+                                src="./img/man-face-emotive-icon-smiling-male-character-in-blue-shirt-flat-illustration-isolated-on-white-happy-human-psychological-portrait-positive-emotions-user-avatar-for-app-web-design-vector 1.svg"
+                                class="rounded-circle"
+                                style="width: 65px; height: 65px; object-fit: cover; border: 2px solid #394867;"
+                                alt="avatar">
+                        </div>
+                        <div class="save-contact-text">
+                            <h2 class="save-contact-h2">Abdulhakim Amonov</h2>
+                            <p class="save-contact-p">+998 90 123 45 67</p>
+                        </div>
+                        <i class="bi bi-star"></i>
+                        <p class="p-dot">...</p>
+                    </div>
+
+                    <div class="user-contact user-contact-star">
+                        <div class="user-icon-2" style="width: 65px; height: 65px;">
+                            <img id="avatarPreview"
+                                src="./img/man-face-emotive-icon-smiling-male-character-in-blue-shirt-flat-illustration-isolated-on-white-happy-human-psychological-portrait-positive-emotions-user-avatar-for-app-web-design-vector 1.svg"
+                                class="rounded-circle"
+                                style="width: 65px; height: 65px; object-fit: cover; border: 2px solid #394867;"
+                                alt="avatar">
+                        </div>
+                        <div class="save-contact-text">
+                            <h2 class="save-contact-h2">Abdulhakim Amonov</h2>
+                            <p class="save-contact-p">+998 90 123 45 67</p>
+                        </div>
+                        <i class="bi bi-star-fill"></i>
+                        <p class="p-dot">...</p>
+                    </div><br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap + JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

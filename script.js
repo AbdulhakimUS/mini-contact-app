@@ -37,3 +37,4 @@
       reader.readAsDataURL(file);
     }
   });
+
