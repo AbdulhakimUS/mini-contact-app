@@ -38,7 +38,6 @@ function add() {
   contactDiv.classList.add("user-contact");
 
   contactDiv.innerHTML = `
-      <div class="user-contact">
         <div class="user-icon-2" style="width: 65px; height: 65px;">
           <img src="${selectedAvatar || './img/default.svg'}"
               class="rounded-circle"
@@ -51,7 +50,6 @@ function add() {
         </div>
         <span class="star-btn"><i class="bi bi-star"></i></span>
         <button class="trash-btn"><i class="bi bi-trash3"></i></button>
-      </div>
     `;
 
   saveContactPlace.appendChild(contactDiv);
@@ -85,11 +83,13 @@ function add() {
 }
 
 document.addEventListener('click', function (event) {
-  if (event.target.closest('.trash-btn')) {
-    const card = event.target.closest('.user-contact');
-    if (card) {
-      card.remove();
-    }
+  const trashBtn = event.target.closest('.trash-btn');
+  if (!trashBtn) return;
+
+  const card = trashBtn.closest('.user-contact');
+
+  if (card) {
+    card.remove(); 
   }
 });
 
