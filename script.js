@@ -92,3 +92,28 @@ document.getElementById("searchInput").addEventListener("input", function () {
   });
 });
 
+
+  // function darkmode() {
+  //   document.body.classList.toggle("dark-mode");
+  // }
+
+
+// function darkmode() {
+//   let body = document.querySelector('body')
+//   let left = document.querySelector('.left')
+//   let right = document.querySelector('.right')
+//   let navbar = document.querySelector('.navbar')
+//   let contactList = document.querySelector('.contact-list')
+//   let loginPlace = document.querySelector('.login-place')
+//   let inputGroup = document.querySelectorAll('.input-group')
+//   let inputText  = document.querySelector('.input-group-text')
+
+//   body.classList.toggle('body-darkmode')
+//   left.classList.toggle('left-darkmode')
+//   right.classList.toggle('right-darkmode')
+//   contactList.classList.toggle('contact-list-darkmode')
+//   loginPlace.classList.toggle('login-place-darkmode')
+//   inputGroup.classList.toggle('input-group-darkmode')
+//   inputText.classList.toggle('input-group-text-darkmode')
+//   navbar.classList.toggle('navbar-darkmode')
+// }

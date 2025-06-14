@@ -55,6 +55,7 @@ nav {
 .btn-nav:hover {
     background-color: #394867;
     color: #fff;
+    border: 1px solid #f6f9fa;
 }
 
 .logout-btn {
@@ -134,18 +135,20 @@ nav {
     background-color: #394867;
     color: #fff;
     padding: 9px 20px;
-
+    border: 1px solid #F6F9FA;
 }
 
 
 .btn-submit:active {
     background-color: #253659 !important;
     color: #fff !important;
+    border: 1px solid #F6F9FA;
 }
 
 .btn-submit:hover {
     background-color: #253659 !important;
     color: #fff !important;
+    border: 1px solid #F6F9FA;
 }
 
 .bi-image {
@@ -288,8 +291,47 @@ nav {
 }
 
 
+/* .body-darkmode {
+    background-color: #394867 !important;
+    color: #f6f9fa !important;
+}
 
+.left-darkmode {
+    background-color: #394867 !important;
+    color: #f6f9fa !important;
+}
 
+.right-darkmode {
+    background-color: #394867 !important;
+    color: #f6f9fa !important;
+}
+
+.navbar-darkmode {
+    background-color: #394867 !important;
+    color: #f6f9fa !important;
+}
+
+.contact-list-darkmode {
+    background-color: #394867 !important;
+    color: #f6f9fa !important;
+}
+
+.login-place-darkmode {
+    background-color: #394867 !important;
+    color: #f6f9fa !important;
+}
+
+.input-group-darkmode {
+    border: 1px solid #f6f9fa;
+    background-color: #394867 !important;
+    color: #f6f9fa !important;
+}
+
+.input-group-text-darkmode {
+    border: 1px solid #f6f9fa;
+    background-color: #394867 !important;
+    color: #f6f9fa !important;
+} */
 
 @media (max-width: 1400px) {
     .container-home {
