@@ -23,7 +23,8 @@
     <!-- Navbar -->
     <nav class="navbar d-flex justify-content-around align-items-center px-4">
         <div class="left-nav">
-            <button class="logout-btn btn-nav"><span class="navbar-text-span">Log Out</span> <i class="bi bi-box-arrow-left"></i></button>
+            <button class="logout-btn btn-nav"><span class="navbar-text-span">Log Out</span> <i
+                    class="bi bi-box-arrow-left"></i></button>
         </div>
 
         <div class="center-nav">
@@ -31,7 +32,8 @@
         </div>
 
         <div class="right-nav">
-            <button class="darkmode-btn btn-nav"><i class="bi bi-moon-stars"></i> <span class="navbar-text-span">Tun Rejimi</span></button>
+            <button class="darkmode-btn btn-nav"><i class="bi bi-moon-stars"></i> <span class="navbar-text-span">Tun
+                    Rejimi</span></button>
         </div>
     </nav>
 
@@ -53,40 +55,34 @@
                     <input type="file" id="avatarUpload" accept="image/*" style="display: none;">
                 </div>
 
-                <div class="login-place">
+                <div class="login-place" id="loginPlace">
                     <h2 class="login-h2">Iltimos ismingizni kiriting</h2>
                     <form id="login-form" class="login-form">
                         <div class="input-group mb-1">
                             <span class="input-group-text"
                                 style="border: none; border-right: 2px solid #394867; margin: 5px;"><i
                                     class="bi bi-person"></i></span>
-                            <input type="text" class="form-control" placeholder="Ism">
+                            <input type="text" class="form-control" placeholder="Ism" id="nameInput">
                         </div>
                         <div class="input-group mb-1">
                             <span class="input-group-text"
                                 style="border: none; border-right: 2px solid #394867; margin: 5px;"><i
                                     class="bi bi-people"></i></span>
-                            <input type="text" class="form-control" placeholder="Familiya">
+                            <input type="text" class="form-control" placeholder="Familiya" id="surnameInput">
                         </div>
                         <div class="input-group mb-1">
                             <span class="input-group-text"
                                 style="border: none; border-right: 2px solid #394867; margin: 5px;"><i
                                     class="bi bi-phone"></i></span>
-                            <input type="number" class="form-control" placeholder="Telefon raqam">
-                        </div>
-                        <div class="input-group mb-1">
-                            <span class="input-group-text"
-                                style="border: none; border-right: 2px solid #394867; margin: 5px;"><i
-                                    class="bi bi-calendar-date"></i></span>
-                            <input type="date" class="form-control" placeholder="Sana">
+                            <input type="number" class="form-control" placeholder="Telefon raqam" id="phoneInput">
                         </div>
                         <div class="input-group mb-2">
                             <span class="input-group-text"
                                 style="border: none; border-right: 2px solid #394867; margin: 5px;"><i
-                                    class="bi bi-pencil-square"></i></span>
-                            <input type="text" class="form-control" placeholder="Qo'shimcha ma'lumot">
+                                    class="bi bi-calendar-date"></i></span>
+                            <input type="date" class="form-control" placeholder="Sana" id="dateInput">
                         </div>
-                        <button type="submit" class="btn btn-submit w-100">Qo'shish</button>
+                        <button type="submit" class="btn btn-submit w-100" onclick="add(event)">Qo'shish</button>
                 </div>
             </div>
         </div>
@@ -108,44 +104,11 @@
                         <span class="input-group-text"
                             style="border: none; border-right: 2px solid #394867; margin: 5px;"><i
                                 class="bi bi-search"></i></span>
-                        <input type="text" placeholder="Kontakt qidirish" style="margin-left: 10px;">
+                        <input type="text" id="searchInput" placeholder="Kontakt qidirish" style="margin-left: 10px;">
                     </div>
                     <button id="contact-search" class="contact-search">Barchasi</button>
                 </div>
-                <div class="save-contact-place">
-                    <div class="user-contact">
-                        <div class="user-icon-2" style="width: 65px; height: 65px;">
-                            <img id="avatarPreview"
-                                src="./img/man-face-emotive-icon-smiling-male-character-in-blue-shirt-flat-illustration-isolated-on-white-happy-human-psychological-portrait-positive-emotions-user-avatar-for-app-web-design-vector 1.svg"
-                                class="rounded-circle"
-                                style="width: 65px; height: 65px; object-fit: cover; border: 2px solid #394867;"
-                                alt="avatar">
-                        </div>
-                        <div class="save-contact-text">
-                            <h2 class="save-contact-h2">Abdulhakim Amonov</h2>
-                            <p class="save-contact-p">+998 90 123 45 67</p>
-                        </div>
-                        <i class="bi bi-star"></i>
-                        <p class="p-dot">...</p>
-                    </div><br>
-
-                    <div class="user-contact user-contact-star">
-                        <div class="user-icon-2" style="width: 65px; height: 65px;">
-                            <img id="avatarPreview"
-                                src="./img/man-face-emotive-icon-smiling-male-character-in-blue-shirt-flat-illustration-isolated-on-white-happy-human-psychological-portrait-positive-emotions-user-avatar-for-app-web-design-vector 1.svg"
-                                class="rounded-circle"
-                                style="width: 65px; height: 65px; object-fit: cover; border: 2px solid #394867;"
-                                alt="avatar">
-                        </div>
-                        <div class="save-contact-text">
-                            <h2 class="save-contact-h2">Abdulhakim Amonov</h2>
-                            <p class="save-contact-p">+998 90 123 45 67</p>
-                        </div>
-                        <i class="bi bi-star-fill"></i>
-                        <p class="p-dot">...</p>
-                    </div>
-
-                </div>
+                <div class="save-contact-place" id="saveContactPlace"></div>
             </div>
         </div>
     </div>
