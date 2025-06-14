@@ -286,6 +286,7 @@ nav {
 
 
 .user-contact {
+    position: relative;
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -294,15 +295,80 @@ nav {
     margin-bottom: 10px;
 }
 
+.star-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
 .trash-btn{
     border: none;
     font-size: 22px;
     width: 22px;
     height: 22px;
     background-color: #f6f9fa;
-    margin-top: 20px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
 }
 
+
+@media (max-width: 2000px) {
+    .container-home {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .left-home-h1,
+    .right-home-h1 {
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .contact-list {
+        padding: 0 10px;
+    }
+
+    .input-search {
+        width: 100%;
+    }
+
+    .user-contact {
+        align-items: center;
+        height: 100px;
+    }
+
+    .bi-star,
+    .bi-star-fill {
+        position: absolute;
+        top: 0px;
+        right: 35px;
+    }
+
+    .save-contact-h2 {
+        width: 300px;
+    }
+
+    body {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .contact-list{
+        width: 600px;
+    }
+
+    .trash-btn{
+        position: absolute;
+        top: 35px;
+    }
+}
 
 @media (max-width: 1400px) {
     .container-home {
@@ -337,8 +403,9 @@ nav {
 
     .bi-star,
     .bi-star-fill {
-        margin-top: -15px;
-        margin-left: 70px;
+        position: absolute;
+        top: 0px;
+        right: 35px;
     }
 
     .save-contact-h2 {
@@ -355,7 +422,8 @@ nav {
     }
 
     .trash-btn{
-        margin-top: -20px;
+        position: absolute;
+        top: 35px;
     }
 }
 
@@ -394,8 +462,7 @@ nav {
 
     .bi-star,
     .bi-star-fill {
-        margin-top: -15px;
-        margin-left: -5px;
+        position: absolute;
     }
 
     .save-contact-h2 {
@@ -452,8 +519,13 @@ nav {
 
     .bi-star,
     .bi-star-fill {
-        margin-top: -10px;
-        margin-left: 0px;
+        position: absolute;
+        right: 45px;
+    }
+
+    .trash-btn{
+        position: absolute;
+        right: 20px;
     }
 
     .save-contact-h2 {
@@ -523,8 +595,7 @@ nav {
 
     .bi-star,
     .bi-star-fill {
-        margin-top: -10px;
-        margin-left: -10px;
+        position: absolute;
     }
 
     .save-contact-h2 {
@@ -594,8 +665,7 @@ nav {
 
     .bi-star,
     .bi-star-fill {
-        margin-top: -10px;
-        margin-left: -10px;
+        position: absolute;
     }
 
     .save-contact-h2 {
@@ -680,8 +750,7 @@ nav {
 
     .bi-star,
     .bi-star-fill {
-        margin-top: -15px;
-        margin-left: -50px;
+        position: absolute;
     }
 
     .save-contact-h2 {
@@ -777,18 +846,26 @@ nav {
 
     .bi-star,
     .bi-star-fill {
-        margin-top: -15px;
-        margin-left: -45px;
+        position: absolute;
+        right: 25px;
+        top: -10px;
         font-size: 18px;
     }
 
     .trash-btn{
         font-size: 18px;
+        position: absolute;
+        right: 10px;
+        top: 25px;
     }
 
     .save-contact-h2 {
         width: 200px;
         font-size: 15px;
+    }
+
+    .save-contact-p{
+        font-size: 12px;
     }
 
     body {
@@ -888,14 +965,15 @@ nav {
 
     .bi-star,
     .bi-star-fill {
-        margin-top: -5px;
-        margin-left: -55px;
+        position: absolute;
         font-size: 16px;
+        right: 10px;
     }
 
     .trash-btn{
         font-size: 16px;
-        margin-top: -10px;
+        position: absolute;
+        right: 0;
     }
 
     .save-contact-h2 {
@@ -998,8 +1076,7 @@ nav {
 
     .bi-star,
     .bi-star-fill {
-        margin-top: -10px;
-        margin-left: -60px;
+        position: absolute;
         font-size: 16px;
     }
 

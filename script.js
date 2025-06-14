@@ -49,7 +49,7 @@ function add() {
           <h2 class="save-contact-h2">${name} ${surname}</h2>
           <p class="save-contact-p">+${phone}, ${date}</p>
         </div>
-        <i class="bi bi-star"></i>
+        <span class="star-btn"><i class="bi bi-star"></i></span>
         <button class="trash-btn"><i class="bi bi-trash3"></i></button>
       </div>
     `;
@@ -69,13 +69,13 @@ function add() {
     if (isFavorite) {
       star.classList.remove("bi-star-fill");
       star.classList.add("bi-star");
-      contactDiv.style.backgroundColor = "#f6f9fa"; 
+      contactDiv.style.backgroundColor = "#f6f9fa";
       contactDiv.style.width = '100%'
       trash.style.backgroundColor = "#f6f9fa"
     } else {
       star.classList.remove("bi-star");
       star.classList.add("bi-star-fill");
-      contactDiv.style.backgroundColor = "#e7ecee"; 
+      contactDiv.style.backgroundColor = "#e7ecee";
       contactDiv.style.borderRadius = '15px'
       contactDiv.style.width = '100%'
       trash.style.backgroundColor = "#e7ecee"
@@ -88,7 +88,6 @@ document.addEventListener('click', function (event) {
   if (event.target.closest('.trash-btn')) {
     const card = event.target.closest('.user-contact');
     if (card) {
-      card.style.backgroundColor = "#f6f9fa"
       card.remove();
     }
   }
