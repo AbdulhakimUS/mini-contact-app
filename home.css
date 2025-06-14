@@ -795,6 +795,11 @@ nav {
         overflow: auto;
         width: 100%;
     }
+
+    .user-icon-2{
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media (max-width: 380px) {
