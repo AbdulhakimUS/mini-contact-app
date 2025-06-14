@@ -314,9 +314,11 @@ nav {
 
 
 @media (max-width: 2000px) {
+
     .container-home {
         flex-direction: row;
         gap: 30px;
+        margin: 0 300px;
     }
 
     .left,
