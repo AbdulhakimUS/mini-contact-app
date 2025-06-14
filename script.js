@@ -1,3 +1,7 @@
+window.onload = (event) => {
+  console.log("page is fully loaded");
+};
+
 let selectedAvatar = "";
 
 document.getElementById("avatarUpload").addEventListener("change", function (event) {
