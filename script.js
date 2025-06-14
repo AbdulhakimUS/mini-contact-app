@@ -38,47 +38,62 @@ function add() {
   contactDiv.classList.add("user-contact");
 
   contactDiv.innerHTML = `
+      <div class="user-contact">
         <div class="user-icon-2" style="width: 65px; height: 65px;">
-            <img src="${selectedAvatar || './img/man-face-emotive-icon-smiling-male-character-in-blue-shirt-flat-illustration-isolated-on-white-happy-human-psychological-portrait-positive-emotions-user-avatar-for-app-web-design-vector 1.svg'}"
-                class="rounded-circle"
-                style="width: 65px; height: 65px; object-fit: cover; border: 2px solid #394867;"
-                alt="avatar">
+          <img src="${selectedAvatar || './img/default.svg'}"
+              class="rounded-circle"
+              style="width: 65px; height: 65px; object-fit: cover; border: 2px solid #394867;"
+              alt="avatar">
         </div>
         <div class="save-contact-text">
-            <h2 class="save-contact-h2">${name} ${surname}</h2>
-            <p class="save-contact-p">+${phone}, ${date}</p>
+          <h2 class="save-contact-h2">${name} ${surname}</h2>
+          <p class="save-contact-p">+${phone}, ${date}</p>
         </div>
         <i class="bi bi-star"></i>
+        <button class="trash-btn"><i class="bi bi-trash3"></i></button>
+      </div>
     `;
 
   saveContactPlace.appendChild(contactDiv);
 
   document.getElementById("login-form").reset();
-  document.getElementById("avatarPreview").src = "./img/man-face-emotive-icon-smiling-male-character-in-blue-shirt-flat-illustration-isolated-on-white-happy-human-psychological-portrait-positive-emotions-user-avatar-for-app-web-design-vector 1.svg";
+  document.getElementById("avatarPreview").src = "./img/default.svg";
   selectedAvatar = "";
 
   const star = contactDiv.querySelector(".bi-star");
+  const trash = contactDiv.querySelector(".trash-btn")
 
   star.addEventListener("click", () => {
     const isFavorite = star.classList.contains("bi-star-fill");
 
     if (isFavorite) {
-      // Удаляем "избранное"
       star.classList.remove("bi-star-fill");
       star.classList.add("bi-star");
-      contactDiv.style.backgroundColor = "#f6f9fa"; // сброс фона
+      contactDiv.style.backgroundColor = "#f6f9fa"; 
       contactDiv.style.width = '100%'
+      trash.style.backgroundColor = "#f6f9fa"
     } else {
-      // Делаем "избранным"
       star.classList.remove("bi-star");
       star.classList.add("bi-star-fill");
-      contactDiv.style.backgroundColor = "#e7ecee"; // затемнённый фон
+      contactDiv.style.backgroundColor = "#e7ecee"; 
       contactDiv.style.borderRadius = '15px'
       contactDiv.style.width = '100%'
+      trash.style.backgroundColor = "#e7ecee"
     }
   });
 
 }
+
+document.addEventListener('click', function (event) {
+  if (event.target.closest('.trash-btn')) {
+    const card = event.target.closest('.user-contact');
+    if (card) {
+      card.style.backgroundColor = "#f6f9fa"
+      card.remove();
+    }
+  }
+});
+
 
 document.getElementById("searchInput").addEventListener("input", function () {
   const query = this.value.toLowerCase();
