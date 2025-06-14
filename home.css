@@ -753,6 +753,14 @@ nav {
     .bi-star,
     .bi-star-fill {
         position: absolute;
+        right: 30px;
+        top: -10px;
+    }
+
+    .trash-btn{
+        position: absolute;
+        right: 15px;
+        top: 25px;
     }
 
     .save-contact-h2 {
