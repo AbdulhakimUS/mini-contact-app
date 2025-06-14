@@ -64,7 +64,7 @@ nav {
     width: 127px;
 }
 
-.darkmode-btn {
+.translate-btn {
     display: flex;
     gap: 8px;
     width: 135px;
@@ -291,47 +291,7 @@ nav {
 }
 
 
-/* .body-darkmode {
-    background-color: #394867 !important;
-    color: #f6f9fa !important;
-}
 
-.left-darkmode {
-    background-color: #394867 !important;
-    color: #f6f9fa !important;
-}
-
-.right-darkmode {
-    background-color: #394867 !important;
-    color: #f6f9fa !important;
-}
-
-.navbar-darkmode {
-    background-color: #394867 !important;
-    color: #f6f9fa !important;
-}
-
-.contact-list-darkmode {
-    background-color: #394867 !important;
-    color: #f6f9fa !important;
-}
-
-.login-place-darkmode {
-    background-color: #394867 !important;
-    color: #f6f9fa !important;
-}
-
-.input-group-darkmode {
-    border: 1px solid #f6f9fa;
-    background-color: #394867 !important;
-    color: #f6f9fa !important;
-}
-
-.input-group-text-darkmode {
-    border: 1px solid #f6f9fa;
-    background-color: #394867 !important;
-    color: #f6f9fa !important;
-} */
 
 @media (max-width: 1400px) {
     .container-home {
@@ -635,7 +595,7 @@ nav {
         padding: 7px 10px;
     }
 
-    .darkmode-btn {
+    .translate-btn {
         width: 120px;
     }
 

@@ -93,27 +93,50 @@ document.getElementById("searchInput").addEventListener("input", function () {
 });
 
 
-  // function darkmode() {
-  //   document.body.classList.toggle("dark-mode");
-  // }
+document.querySelector('.translate-btn')?.addEventListener('click', translate);
+
+let isTranslated = false;
+
+function translate() {
+  const contactH1 = document.querySelector('.contact-h1');
+  const leftHomeH1 = document.querySelector('.left-home-h1');
+  const loginH2 = document.querySelector('.login-h2');
+  const rightHomeH1 = document.querySelector('.right-home-h1');
+  const translateBtnText = document.querySelector('.translate-btn span');
+  const logoutBtnText = document.querySelector('.logout-btn span');
+  const nameInput = document.getElementById('nameInput');
+  const surnameInput = document.getElementById('surnameInput');
+  const phoneInput = document.getElementById('phoneInput');
+  const searchInput = document.getElementById('searchInput');
+  const contactSearch = document.querySelector('.contact-search')
+
+  if (!isTranslated) {
+    contactH1.textContent = "Contacts";
+    leftHomeH1.textContent = "Create Contact";
+    loginH2.textContent = "Enter your name";
+    rightHomeH1.textContent = "Contacts";
+    translateBtnText.textContent = "Uzbek";
+    logoutBtnText.textContent = "Log Out";
+    contactSearch.textContent = "Find";
+    nameInput.placeholder = "Name";
+    surnameInput.placeholder = "Surname";
+    phoneInput.placeholder = "Phone number";
+    searchInput.placeholder = "Find Contact";
+    isTranslated = true;
+  } else {
+    contactH1.textContent = "Kontaktlar";
+    leftHomeH1.textContent = "Kontakt yaratish";
+    loginH2.textContent = "Iltimos ismingizni kiriting";
+    rightHomeH1.textContent = "Kontaktlar";
+    translateBtnText.textContent = "English";
+    logoutBtnText.textContent = "Chiqish";
+    contactSearch.textContent = "Qidirish";
+    nameInput.placeholder = "Ism";
+    surnameInput.placeholder = "Familiya";
+    phoneInput.placeholder = "Telefon";
+    searchInput.placeholder = "Kontakt qidirish";
+    isTranslated = false;
+  }
+}
 
 
-// function darkmode() {
-//   let body = document.querySelector('body')
-//   let left = document.querySelector('.left')
-//   let right = document.querySelector('.right')
-//   let navbar = document.querySelector('.navbar')
-//   let contactList = document.querySelector('.contact-list')
-//   let loginPlace = document.querySelector('.login-place')
-//   let inputGroup = document.querySelectorAll('.input-group')
-//   let inputText  = document.querySelector('.input-group-text')
-
-//   body.classList.toggle('body-darkmode')
-//   left.classList.toggle('left-darkmode')
-//   right.classList.toggle('right-darkmode')
-//   contactList.classList.toggle('contact-list-darkmode')
-//   loginPlace.classList.toggle('login-place-darkmode')
-//   inputGroup.classList.toggle('input-group-darkmode')
-//   inputText.classList.toggle('input-group-text-darkmode')
-//   navbar.classList.toggle('navbar-darkmode')
-// }
